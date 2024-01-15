@@ -4,7 +4,7 @@ import { Home } from './pages';
 
 function App() {
   return (
-    <div className="overflow-hidden max-w-[1400px]">
+    <div className="overflow-hidden mx-auto max-w-[1400px]">
     <HashRouter>
       <Routes>
         <Route path='/' element={<Home />} />

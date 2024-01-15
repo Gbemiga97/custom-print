@@ -24,9 +24,9 @@ module.exports = {
         secondary: '#FF680A'
       },
       backgroundImage: {
-        heroBg1: 'url(src/assets/hero/layer_1.png)',
-        heroBg2: 'url(src/assets/hero/layer_2.png)',
-        heroBg3: 'url(src/assets/hero/layer_3.png)',
+        heroBg1: 'url(/src/assets/hero/layer_1.png)',
+       
+        heroBg3: 'url(/src/assets/hero/layer_3.png)',
       }
     },
   },
