@@ -8,6 +8,6 @@
     @apply font text-black text-lg 
   }
   .h1 {
-    @apply text-6xl xl:text-[4.5rem] font-semibold leading-[4.5rem] xl:leading-[5.5rem] text-[#1E1E1E]
+    @apply text-6xl xl:text-[5.2rem] font-semibold leading-[4.5rem] xl:leading-[5.5rem] text-[#1E1E1E]
   }
 }
