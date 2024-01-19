@@ -1,3 +1,4 @@
+import { Button, Divider } from "../components"
 import { images } from "../utils"
 
 
@@ -10,16 +11,19 @@ const Hero = () => {
            {/* text & image */}
             <div className="flex flex-col-reverse justify-center md:flex-row xl:items-center md:pt-24 xl:pt-0  md:justify-between w-full h-full ">
                 {/* text */}
-                <div className=" flex flex-col items-start  gap-y-2 md:pt-8 xl:pt-0  justify-start max-w-md  xl:max-w-xl">
+                <div className=" flex flex-col items-start  gap-y-2 md:pt-8 xl:pt-0  justify-start max-w-md  xl:max-w-xl mt-24 md:mt-0">
                     <p className="text-xl text-[#989898] font-normal">
                         Design Your T-shirt</p>
                     <h1 className="h1">
                         We Print Anything
                          You Want</h1>
-                         <p className="text-gray-400 text-base  max-w-80 xl:max-w-none  ">
+                         <Divider />
+                         <p className="text-gray-400 text-base mb-10  max-w-80 xl:max-w-none  ">
                          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                         egestas. Vestibulum tortor quam, feugiat
                          </p>
+
+                         <Button text='Read More' className='btn-secondary hover:btn-primary' />
                 </div>
 
                 {/* image */}
