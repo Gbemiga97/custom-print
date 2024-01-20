@@ -7,7 +7,7 @@ const Hero = () => {
     <section>
           {/* background image */}
           <div  className="bg-heroBg3 h-full bg-no-repeat bg-contain  bg-right absolute -top-[21rem] md:-top-[29rem]  xl:-top-1 bottom-0 left-0 right-0 ml-2  md:ml-36 xl:ml-0"  />
-        <div className="h-[110vh] relative  container mx-auto">
+        <div className="h-[110vh] relative  container mx-auto pt-32">
            {/* text & image */}
             <div className="flex flex-col-reverse justify-center md:flex-row xl:items-center md:pt-24 xl:pt-0  md:justify-between w-full h-full ">
                 {/* text */}
@@ -28,7 +28,7 @@ const Hero = () => {
 
                 {/* image */}
 
-                   <div className="absolute md:-right-[12rem] xl:-right-[15rem] top-9 xl:bottom-0 max-w-[43rem] xl:max-w-5xl">
+                   <div className="absolute md:-right-[12rem] xl:-right-[15rem] top-9 xl:top-20  max-w-[43rem] xl:max-w-5xl">
                    <img src={images.HeroShirt} alt="shirt" className="" />
                    </div>
             </div>
