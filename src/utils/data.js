@@ -25,9 +25,35 @@ const links = [
 ]
 
 
+const socials = [
+    {
+        name: 'facebook',
+        link: '/'
+    },
+    {
+        name: 'pinterest',
+        link: '/'
+    },
+    {
+        name: 'instagram',
+        link: '/'
+    },
+    {
+        name: 'twitter',
+        link: '/'
+    },
+    {
+        name: 'youtube',
+        link: '/'
+    },
+]
+
+
+
 
 const data = {
-    links
+    links,
+    socials
 }
 
 

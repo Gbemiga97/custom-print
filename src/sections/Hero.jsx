@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
 import { Button, Divider } from "../components"
 import { images } from "../utils"
+import data from "../utils/data"
 
 
 const Hero = () => {
@@ -11,7 +13,7 @@ const Hero = () => {
            {/* text & image */}
             <div className="flex flex-col-reverse justify-center md:flex-row xl:items-center md:pt-24 xl:pt-0  md:justify-between w-full h-full ">
                 {/* text */}
-                <div className=" flex flex-col items-start  gap-y-2 md:pt-8 xl:pt-0  justify-start max-w-md  xl:max-w-xl mt-24 md:mt-0">
+                <div className=" flex flex-col items-start  gap-y-2 md:pt-0 xl:pt-24  justify-start max-w-md  xl:max-w-xl mt-24 md:mt-0">
                     <p className="text-xl text-[#989898] font-normal">
                         Design Your T-shirt</p>
                     <h1 className="h1">
@@ -24,11 +26,25 @@ const Hero = () => {
                          </p>
 
                          <Button text='Read More' className='btn-secondary hover:btn-primary' />
+
+                         {/* socials */}
+                         <div className="flex gap-x-4 capitalize text-xl mt-32 font-medium">
+                          {
+                            data.socials.map(({name, link}, i) => (
+                             <div key={i} className="flex items-center justify-center gap-x-2">
+                               <Link to={link} key={i} className="hover:line-through decoration-primary  transition-all ">
+                              {name}
+                              </Link>
+                              <div className="w-1.5 h-0.5 bg-black" />
+                             </div>
+                            ))
+                          }
+                         </div>
                 </div>
 
                 {/* image */}
 
-                   <div className="absolute md:-right-[12rem] xl:-right-[15rem] top-9 xl:top-20  max-w-[43rem] xl:max-w-5xl">
+                   <div className="absolute md:-right-[12rem] xl:-right-[15rem] top-14 md:top-18 xl:top-20  max-w-[43rem] xl:max-w-5xl">
                    <img src={images.HeroShirt} alt="shirt" className="" />
                    </div>
             </div>
