@@ -1,3 +1,4 @@
+import images from "./images"
 
 
 
@@ -51,9 +52,43 @@ const socials = [
 
 
 
+
+
+const customProducts = [
+    {
+        img: images.Pillow,
+        name: 'Pillow',
+        items: '3'
+    },
+    {
+        img: images.SchoolBag,
+        name: 'School Bag',
+        items: '4'
+    },
+    {
+        img: images.BottleCap,
+        name: 'Bottle Cap',
+        items: '6'
+    },
+    {
+        img: images.Book,
+        name: 'Book',
+        items: '7'
+    },
+    {
+        img: images.Pouch,
+        name: 'Decoration',
+        items: '6'
+    },
+]
+
+
+
+
 const data = {
     links,
-    socials
+    socials,
+    customProducts
 }
 
 

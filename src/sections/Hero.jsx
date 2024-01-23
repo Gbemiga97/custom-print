@@ -28,7 +28,7 @@ const Hero = () => {
                          <Button text='Read More' className='btn-secondary hover:btn-primary' />
 
                          {/* socials */}
-                         <div className="flex gap-x-4 capitalize text-xl mt-32 font-medium">
+                         <div className="flex gap-x-4 capitalize text-xl mt-28 font-medium flex-wrap md:flex-nowrap">
                           {
                             data.socials.map(({name, link}, i) => (
                              <div key={i} className="flex items-center justify-center gap-x-2">

@@ -1,10 +1,12 @@
+import { CustomProducts } from "../components"
 import { Hero } from "../sections"
 
 
 const Home = () => {
   return (
-    <section className="relative ">
+    <section>
       <Hero />
+      <CustomProducts />
     </section>
   )
 }
